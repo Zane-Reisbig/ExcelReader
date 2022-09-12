@@ -171,7 +171,18 @@ export default function words() {
       assoc: "SIE",
     },
     {
-      // If you see this it is broken lol
+      word: "Perform additional efforts; up to a maximum of eight to reach repeatability.",
+      assoc: "Less than 3 acceptable",
+    },
+    {
+      word: "Perform additional efforts, up to a maximum of eight to reach repeatability.",
+      assoc: "Less than 3 acceptable",
+    },
+    {
+      word: "Perform additional efforts up to a maximum of eight to reach repeatability",
+      assoc: "Less than 3 acceptable",
+    },
+    {
       word: "",
       assoc: "",
     },
