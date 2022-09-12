@@ -156,14 +156,6 @@ export default function words() {
     },
     {
       word: "Hesitation during start of forced exhalation back extrapolated volume is out of range (FEV1)",
-      assoc: "Email Me for Association",
-    },
-    {
-      word: "Poor inspiratory effort",
-      assoc: "Email Me for Association",
-    },
-    {
-      word: "Hesitation during start of forced exhalation back extrapolated volume is out of range (FEV1)",
       assoc: "Start of test",
     },
     {
