@@ -152,7 +152,7 @@ export default function words() {
     },
     {
       word: "Artifact/Cough during effort (FVC)",
-      assoc: "Artifact/Cough",
+      assoc: "Artifact/Cough during effort Start of test",
     },
     {
       word: "Hesitation during start of forced exhalation back extrapolated volume is out of range (FEV1)",
@@ -163,8 +163,21 @@ export default function words() {
       assoc: "Email Me for Association",
     },
     {
+      word: "Hesitation during start of forced exhalation back extrapolated volume is out of range (FEV1)",
+      assoc: "Start of test",
+    },
+    {
+      word: "Data meets ATS/ERS criteria for acceptable FVC data; patient might be randomized. Please check other screening visit FVC data for quality messages and observe the study inclusion/exclusion criteria.",
+      assoc: "Good test",
+    },
+    {
       word: "Poor inspiratory effort.",
-      assoc: "Email Me for Association",
+      assoc: "SIE",
+    },
+    {
+      // If you see this it is broken lol
+      word: "",
+      assoc: "",
     },
   ];
 }

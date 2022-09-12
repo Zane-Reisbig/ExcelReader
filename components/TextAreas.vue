@@ -102,10 +102,9 @@ export default {
       finalCount.forEach((item) => {
         let returnValue = "";
         try {
-          returnValue =
-            item.assoc.replace("\n", "") + ", Amount: " + item.count;
+          returnValue = item.assoc.replace("\n", "") + ", " + item.count;
         } catch (error) {
-          returnValue = item.assoc + ", Amount: " + item.count;
+          returnValue = item.assoc + ", " + item.count;
         }
 
         assocCount.push(returnValue);
@@ -124,13 +123,12 @@ export default {
         try {
           return (str +=
             item.word.replace(",", ";") +
-            ", Count: " +
+            ", " +
             item.count +
-            ", Assoc: " +
+            ", " +
             item.assoc.replace(",", ";"));
         } catch (error) {
-          return (str +=
-            item.word + ", Count: " + item.count + ", Assoc: " + item.assoc);
+          return (str += item.word + ", " + item.count + ", " + item.assoc);
         }
       });
       return str;
