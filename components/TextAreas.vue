@@ -1,8 +1,16 @@
 <template>
   <div>
     <div id="workArea">
-      Input Area
-      <textarea v-model="initalArea" @input="splitFirst"></textarea>
+      <div style="display: inline">
+        <br />
+        Input Area
+        <button type="button" @click="clearWorkArea">Clear Input</button>
+      </div>
+      <textarea
+        v-model="initalArea"
+        @input="splitFirst"
+        id="inputArea"
+      ></textarea>
       <div style="display: inline">
         <br />
         Split
@@ -105,19 +113,42 @@ export default {
       let assocCount = [];
       finalCount.forEach((item) => {
         let returnValue = "";
-        try {
-          returnValue = item.assoc.replace("\n", "") + ", " + item.count;
-        } catch (error) {
-          returnValue = item.assoc + ", " + item.count;
-        }
 
-        assocCount.push(returnValue);
+        let foundIndex = -1;
+        assocCount.forEach((item2) => {
+          if (item2.split(",")[0] + "\n" == item.assoc) {
+            foundIndex = assocCount.indexOf(item2);
+          }
+        });
+
+        if (foundIndex != -1) {
+          let newNumber = assocCount[foundIndex]
+            .split(",")
+            .map((i) => i.trim());
+          newNumber = parseInt(newNumber[1]) + item.count;
+
+          assocCount[foundIndex] = `${item.assoc.replace(
+            "\n",
+            ""
+          )}, ${newNumber}`;
+        } else {
+          try {
+            returnValue = item.assoc.replace("\n", "") + ", " + item.count;
+          } catch (error) {
+            returnValue = item.assoc + ", " + item.count;
+          }
+
+          assocCount.push(returnValue);
+        }
       });
+
+      // Clean the list one last time
+      // assocCount.map((item) => item.replace("\n", "") || item);
 
       // Sets the resultArea and assocResultArea to the finalCount array
       this.resultArea = this.objToString(finalCount);
       this.assocResultArea = assocCount.join("\n");
-      console.log(assocCount);
+      // console.log(assocCount);
     },
     objToString(obj) {
       // Converts the obj to a string
@@ -162,6 +193,12 @@ export default {
       } else {
         elSelect.style.display = "none";
       }
+    },
+    clearWorkArea(e) {
+      this.initalArea = "";
+      this.fistSplitArea = "";
+      this.resultArea = "";
+      this.assocResultArea = "";
     },
   },
 };
