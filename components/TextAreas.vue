@@ -58,7 +58,11 @@ export default {
       // Sets the values of the new object
       // Pushes the new object to the finalCount array
       items.forEach((item) => {
-        if (!finalCount.find((o) => o.word === item)) {
+        if (
+          !finalCount.find((o) => o.word === item) &&
+          item != "" &&
+          item != " "
+        ) {
           let newOb = { word: null, count: null, assoc: "No Assoc\n" };
           newOb.word = item;
           newOb.count = 0;

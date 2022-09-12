@@ -159,11 +159,15 @@ export default function words() {
       assoc: "Start of test",
     },
     {
-      word: "Data meets ATS/ERS criteria for acceptable FVC data; patient might be randomized. Please check other screening visit FVC data for quality messages and observe the study inclusion/exclusion criteria.",
+      word: "Data meets ATS/ERS criteria for acceptable FVC data, patient might be randomized. Please check other screening visit FVC data for quality messages and observe the study inclusion/exclusion criteria.",
       assoc: "Good test",
     },
     {
       word: "Poor inspiratory effort.",
+      assoc: "SIE",
+    },
+    {
+      word: "Poor Inspiratory effort, have subject take deep and complete breath in prior to forceful exhalation.",
       assoc: "SIE",
     },
     {
