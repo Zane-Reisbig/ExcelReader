@@ -183,6 +183,30 @@ export default function words() {
       assoc: "Less than 3 acceptable",
     },
     {
+      word: "Data meets ATS/ERS criteria for acceptable quality patient might be randomized. Please check other screening visit PFT data for quality messages and observe the study inclusion/exclusion criteria.",
+      assoc: "Good Test",
+    },
+    {
+      word: "Baseline drift (FEV1 and FVC)",
+      assoc: "Baseline drift",
+    },
+    {
+      word: "Patient CANNOT be randomized; because data does not meet the ATS/ERS criteria for acceptable data quality at screening visit.",
+      assoc: "Bad Test",
+    },
+    {
+      word: "Patient CANNOT be randomized; because FVC data does not meet the ATS/ERS criteria for acceptable data quality at screening visit.",
+      assoc: "Bad Test",
+    },
+    {
+      word: "Best FVC: Acceptable effort deselected by site (FVC)",
+      assoc: "Bad Effort",
+    },
+    {
+      word: "Baseline drift; ensure nose clips are on and the subject has a tight seal around mouth piece.",
+      assoc: "Baseline drift",
+    },
+    {
       word: "",
       assoc: "",
     },
