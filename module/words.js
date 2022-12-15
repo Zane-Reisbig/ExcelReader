@@ -152,15 +152,11 @@ export default function words() {
     },
     {
       word: "Artifact/Cough during effort (FVC)",
-      assoc: "Artifact/Cough during effort Start of test",
+      assoc: "Artifact/Cough",
     },
     {
       word: "Hesitation during start of forced exhalation back extrapolated volume is out of range (FEV1)",
       assoc: "Start of test",
-    },
-    {
-      word: "Data meets ATS/ERS criteria for acceptable FVC data, patient might be randomized. Please check other screening visit FVC data for quality messages and observe the study inclusion/exclusion criteria.",
-      assoc: "Good test",
     },
     {
       word: "Poor inspiratory effort.",
@@ -181,10 +177,6 @@ export default function words() {
     {
       word: "Perform additional efforts up to a maximum of eight to reach repeatability",
       assoc: "Less than 3 acceptable",
-    },
-    {
-      word: "Data meets ATS/ERS criteria for acceptable quality patient might be randomized. Please check other screening visit PFT data for quality messages and observe the study inclusion/exclusion criteria.",
-      assoc: "Good Test",
     },
     {
       word: "Baseline drift (FEV1 and FVC)",
