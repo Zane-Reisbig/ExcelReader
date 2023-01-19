@@ -160,7 +160,7 @@ export default function words() {
     },
     {
       word: "Poor inspiratory effort.",
-      assoc: "SIE",
+      assoc: "4th Phase",
     },
     {
       word: "Poor Inspiratory effort, have subject take deep and complete breath in prior to forceful exhalation.",
